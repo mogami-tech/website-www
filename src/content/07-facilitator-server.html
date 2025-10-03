@@ -10,38 +10,58 @@
             </div>
 
             <div class="order-2 lg:order-1">
-                <p class="text-2xl font-semibold lg:text-3xl">Java facilitator server</p>
+                <p class="text-2xl font-semibold lg:text-3xl">Facilitator server</p>
                 <p class="text-base-content/80 mt-4">
-                    The Mogami Facilitator Service is your backend gateway for processing x402 payments on-chain. It verifies and settles transactions, acting as a trusted bridge between clients and smart contracts. Designed for reliability and automation, it powers real-time payment flows between humans, machines, and APIs.
+                    The Mogami Facilitator Server acts as your payment gateway for x402. You can run it as a Docker image within your own infrastructure, or use our always-on hosted facilitator online. It verifies, authorizes, and settles x402 transactions in real time, connecting your services to the blockchain securely while keeping private keys safe.
                 </p>
                 <div class="mt-8 space-y-8">
                     <div class="flex items-start gap-5">
                         <div class="bg-primary/10 text-primary rounded-box inline-flex items-center p-2">
-                            <span class="iconify lucide--blocks size-6"></span>
+                            <span class="iconify lucide--verified size-6"></span>
                         </div>
                         <div>
-                            <p class="text-lg font-medium">On-Chain Payment Settlement</p>
+                            <p class="text-lg font-medium">Self-Hosted or Hosted</p>
                             <p class="text-base-content/80 mt-1">
-                                Executes and confirms stablecoin payments directly on supported blockchains, ensuring secure and final transfers.
+                                Run it yourself with Docker or use our <a href="https://facilitator.mogami.tech/" target="facilitatorService">managed gateway</a>.
                             </p>
                         </div>
                     </div>
                     <div class="flex items-start gap-5">
                         <div class="bg-primary/10 text-primary rounded-box inline-flex items-center p-2">
-                            <span class="iconify lucide--square-terminal size-6"></span>
+                            <span class="iconify lucide--verified size-6"></span>
                         </div>
                         <div>
-                            <p class="text-lg font-medium">Built-in debug console (work in progress)</p>
+                            <p class="text-lg font-medium">Real-Time Settlement</p>
                             <p class="text-base-content/80 mt-1">
-                                Monitor incoming requests, view payment logs, and debug transaction flows in real time from a web interface.                            </p>
+                                Verify and settle payments instantly on-chain.
+                            </p>
                         </div>
                     </div>
-                    <a  class="btn btn-ghost btn-soft btn-sm mt-8"
-                        href="https://mogami.gitbook.io/mogami/faciliator-server/getting-started"
-                        target="_blank">
-                        Get started
-                        <span class="iconify lucide--arrow-right size-4"></span>
-                    </a>
+                    <div class="flex items-start gap-5">
+                        <div class="bg-primary/10 text-primary rounded-box inline-flex items-center p-2">
+                            <span class="iconify lucide--verified size-6"></span>
+                        </div>
+                        <div>
+                            <p class="text-lg font-medium">Secure Gateway</p>
+                            <p class="text-base-content/80 mt-1">
+                                Protects private keys while handling authorization.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <a  class="btn btn-ghost btn-soft btn-sm mt-8"
+                            href="https://mogami.gitbook.io/mogami/faciliator-server/getting-started"
+                            target="_blank">
+                            Get started
+                            <span class="iconify lucide--arrow-right size-4"></span>
+                        </a>
+                        <a  class="btn btn-ghost btn-soft btn-sm mt-8"
+                            href="https://facilitator.mogami.tech"
+                            target="_blank">
+                            Hosted facilitator
+                            <span class="iconify lucide--arrow-right size-4"></span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
